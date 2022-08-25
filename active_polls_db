@@ -1,0 +1,7 @@
+-- Produce a list with information on all the polls that are active in the database. 
+-- For each active poll display the poll question and options, and the date it was published.
+
+SELECT Poll.Publisheddate, Poll.QuestionText, Option.OptionText
+FROM Poll, Option
+WHERE Poll.Pollid = Option.Pollid
+AND Poll.IsActive = TRUE;
