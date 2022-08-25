@@ -2,19 +2,19 @@ CREATE TABLE IF NOT EXISTS "Poll"(
 "PollId" INTEGER PRIMARY KEY AUTOINCREMENT, 
 "QuestionText" VARCHAR(100), 
 "IsActive" VARCHAR(100), 
-"PublishedDate" VARCHAR(100))
+"PublishedDate" VARCHAR(100));
 
 CREATE TABLE IF NOT EXISTS "Student"(
 "StudentId" INTEGER PRIMARY KEY AUTOINCREMENT, 
 "FirstName" VARCHAR(100), 
 "LastName" VARCHAR(100), 
-"YearGroup" VARCHAR(100))
+"YearGroup" VARCHAR(100));
 
 CREATE TABLE IF NOT EXISTS "Option"(
 "OptionId" INTEGER PRIMARY KEY AUTOINCREMENT, 
 "PollId" INTEGER, 
 "OptionText" VARCHAR(100),
-FOREIGN KEY("PollId") REFERENCES "Poll"("PollId"))
+FOREIGN KEY("PollId") REFERENCES "Poll"("PollId"));
 
 CREATE TABLE IF NOT EXISTS "Vote"(
 "StudentId" INTEGER, 
@@ -23,4 +23,4 @@ CREATE TABLE IF NOT EXISTS "Vote"(
 "SubmittedTime" VARCHAR(100),
 PRIMARY KEY("StudentId", "OptionId"),
 FOREIGN KEY("StudentId") REFERENCES "Student"("StudentId"),
-FOREIGN KEY("OptionId") REFERENCES "Option"("OptionId"))
+FOREIGN KEY("OptionId") REFERENCES "Option"("OptionId"));
