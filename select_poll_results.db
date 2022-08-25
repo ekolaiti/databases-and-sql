@@ -1,0 +1,9 @@
+-- Produce a list with the results of the poll about climate change. The poll has PollId = 1.
+-- The list should include the names of the students that voted in the poll, ordered by year group, and the option that they voted for. 
+
+SELECT Student.FirstName, Student.LastName, Student.YearGroup, Option.OptionText
+FROM Student, Vote, Option
+WHERE Student.StudentId = Vote.StudentId
+AND Vote.OptionId = Option.OptionId
+AND Option.PollId = 1
+ORDER BY YearGroup;
