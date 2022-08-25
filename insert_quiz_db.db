@@ -1,0 +1,27 @@
+
+INSERT INTO Quiz (QuizId, Name, PublishedDate) VALUES (1, 'Black History Month', '2021-10-01');
+INSERT INTO Quiz (QuizId, Name, PublishedDate) VALUES (2, 'Environment Month', '2021-09-01');
+INSERT INTO Quiz (QuizId, Name, PublishedDate) VALUES (3, 'Science Month', '2021-08-01');
+
+INSERT INTO Question (QuestionId, QuizId, Description, QuestionOrder) VALUES (1, 1, 'What is Mae Jemison famous for?', 1);
+INSERT INTO Question (QuestionId, QuizId, Description, QuestionOrder) VALUES (2, 1, 'Whose iconic speech repeated the phrase "I have a dream"', 2);
+INSERT INTO Question (QuestionId, QuizId, Description, QuestionOrder) VALUES (3, 1, 'Nelson Mandela was the president of which country?', 3);
+
+
+INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (1, 1, 'The first black woman to win an olympic gold medal', 1, FALSE);
+INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (2, 1, 'The first black woman to travel into space', 2, TRUE);
+INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (3, 1, 'The first black woman to become an MP', 3, FALSE);
+
+INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (4, 2, 'Maya Angelou', 1, FALSE);
+INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (5, 2, 'Mary Seacole', 2, FALSE);
+INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (6, 2, 'Martin Luther King', 3, TRUE);
+
+INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (7, 3, 'South Africa', 1, TRUE);
+INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (8, 3, 'Egypt', 2, FALSE);
+INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (9, 3, 'Australia', 3, FALSE);
+
+INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Emily','Marr','Year 12', 'emily@gmail.com' );
+INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Joe','Donald','Year 12', 'joed@gmail.com');
+INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Abdel','Patel','Year 13', 'abdelp@gmail.com');
+INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Bob','Jones','Year 13', 'bobj@gmail.com');
+INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Kate','Robinson','Year 13', 'kr13@gmail.com');
