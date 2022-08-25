@@ -3,7 +3,7 @@ INSERT INTO "Student" ("FirstName","LastName","YearGroup") VALUES ('Joe','Donald
 INSERT INTO "Student" ("FirstName","LastName","YearGroup") VALUES ('Abdel','Patel','Year 13');
 INSERT INTO "Student" ("FirstName","LastName","YearGroup") VALUES ('Bob','Jones','Year 13');
 
-INSERT INTO Poll(QuestionText, IsActive, PublishedDate) VALUES ("Which is a higher risk of climate change?", "True", "2021/10/01");
+INSERT INTO Poll(QuestionText, IsActive, PublishedDate) VALUES ("Which is a higher risk of climate change?", TRUE, "2021-10-01");
 
 INSERT INTO "Option" ("PollId", "OptionText")  VALUES (1, "extreme temperatures");
 INSERT INTO "Option" ("PollId", "OptionText")  VALUES (1, "sea level rise");
