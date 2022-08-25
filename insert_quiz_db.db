@@ -29,15 +29,14 @@ INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Bob','Jones
 INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Kate','Robinson','Year 13', 'kr13@gmail.com');
 
 -- Attempt
-INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (1, 1, 1, '2021-10-09', '12:45:01');
-INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (2, 1, 1, '2021-10-09', '13:45:11');
-INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (3, 2, 1, '2021-09-02', '10:20:02');
-INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (4, 2, 1, '2021-25-08', '15:32:00');
-INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (5, 3, 1, '2021-10-17', '06:05:00');
-INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (6, 4, 1, '2021-10-25', '13:25:01');
-INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (7, 5, 1, '2021-10-12', '17:20:12');
-INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (8, 5, 1, '2021-10-12', '18:37:00');
-INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (9, 5, 1, '2021-10-13', '09:03:00');
+INSERT INTO Attempt (AttemptId, StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (1, 1, 1, '2021-10-09', '12:45:01');
+INSERT INTO Attempt (AttemptId, StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (2, 1, 1, '2021-10-09', '13:45:11');
+INSERT INTO Attempt (AttemptId, StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (3, 2, 1, '2021-09-02', '10:20:02');
+INSERT INTO Attempt (AttemptId, StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (4, 2, 1, '2021-25-08', '15:32:00');
+INSERT INTO Attempt (AttemptId, StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (5, 3, 1, '2021-10-17', '06:05:00');
+INSERT INTO Attempt (AttemptId, StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (6, 4, 1, '2021-10-25', '13:25:01');
+INSERT INTO Attempt (AttemptId, StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (7, 5, 1, '2021-10-12', '17:20:12');
+INSERT INTO Attempt (AttemptId, StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (8, 5, 1, '2021-10-12', '18:37:00');
 
 -- AttemptAnswer
 INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (1, 1);
@@ -45,8 +44,8 @@ INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (1, 4);
 INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (1, 9);
 
 INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (2, 2);
-INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (2, 4;
-INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (2, 8;
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (2, 4);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (2, 8);
 
 INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (3, 2);
 INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (3, 5);
