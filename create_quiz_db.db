@@ -1,0 +1,54 @@
+CREATE TABLE IF NOT EXISTS Quiz (
+	QuizId INTEGER,
+	Name VARCHAR(100),
+	PublishedDate DATE,
+	PRIMARY KEY(QuizId AUTOINCREMENT)
+);
+
+CREATE TABLE IF NOT EXISTS Question (
+	QuestionId INTEGER,
+	QuizId INTEGER,
+	Description VARCHAR(100),
+	QuestionOrder INTEGER,
+	PRIMARY KEY(QuestionId AUTOINCREMENT),
+	FOREIGN KEY(QuizId) REFERENCES Quiz(QuizId)
+);
+
+CREATE TABLE IF NOT EXISTS Choice (
+	ChoiceId INTEGER,
+	QuestionId INTEGER,
+	Description VARCHAR(100),
+	ChoiceOrder INTEGER,
+	IsCorrect BOOLEAN,
+	PRIMARY KEY(ChoiceId AUTOINCREMENT),
+	FOREIGN KEY(QuestionId) REFERENCES Question(QuestionId)
+);
+
+CREATE TABLE IF NOT EXISTS Student(
+	StudentId INTEGER, 
+	FirstName VARCHAR(100), 
+	LastName VARCHAR(100), 
+	YearGroup VARCHAR(100),
+	Email VARCHAR(50),
+	PRIMARY KEY(StudentId AUTOINCREMENT)
+);
+
+CREATE TABLE IF NOT EXISTS Attempt(
+	AttemptId INTEGER,
+	StudentId INTEGER,
+	QuizId INTEGER,
+	SubmittedDate DATE,
+	SubmittedTime TIME,
+	PRIMARY KEY(AttemptId AUTOINCREMENT),
+	FOREIGN KEY(StudentId) REFERENCES Student(StudentId),
+	FOREIGN KEY(QuizId) REFERENCES Quiz(QuizId)
+);
+
+CREATE TABLE IF NOT EXISTS AttemptAnswer (
+	AttemptId INTEGER,
+	ChoiceId INTEGER,
+	PRIMARY KEY(AttemptId, ChoiceId),
+	FOREIGN KEY(AttemptId) REFERENCES Attempt(AttemptId),
+	FOREIGN KEY(ChoiceId) REFERENCES Choice(ChoiceId)
+);
+
