@@ -25,9 +25,9 @@ CREATE TABLE IF NOT EXISTS Choice (
 );
 
 CREATE TABLE IF NOT EXISTS Student(
-	StudentId INTEGER, 
-	FirstName VARCHAR(100), 
-	LastName VARCHAR(100), 
+	StudentId INTEGER,
+	FirstName VARCHAR(100),
+	LastName VARCHAR(100),
 	YearGroup VARCHAR(100),
 	Email VARCHAR(50),
 	PRIMARY KEY(StudentId AUTOINCREMENT)
