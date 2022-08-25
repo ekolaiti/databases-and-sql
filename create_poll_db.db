@@ -19,8 +19,8 @@ FOREIGN KEY(PollId) REFERENCES Poll(PollId));
 CREATE TABLE IF NOT EXISTS Vote(
 StudentId INTEGER, 
 OptionId INTEGER, 
-SubmittedDate VARCHAR(100), 
-SubmittedTime VARCHAR(100),
+SubmittedDate DATE, 
+SubmittedTime TIME,
 PRIMARY KEY(StudentId, OptionId),
 FOREIGN KEY(StudentId) REFERENCES Student(StudentId),
 FOREIGN KEY(OptionId) REFERENCES Option(OptionId));
