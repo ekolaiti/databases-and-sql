@@ -1,13 +1,14 @@
-
+-- Quiz
 INSERT INTO Quiz (QuizId, Name, PublishedDate) VALUES (1, 'Black History Month', '2021-10-01');
 INSERT INTO Quiz (QuizId, Name, PublishedDate) VALUES (2, 'Environment Month', '2021-09-01');
 INSERT INTO Quiz (QuizId, Name, PublishedDate) VALUES (3, 'Science Month', '2021-08-01');
 
+-- Question
 INSERT INTO Question (QuestionId, QuizId, Description, QuestionOrder) VALUES (1, 1, 'What is Mae Jemison famous for?', 1);
 INSERT INTO Question (QuestionId, QuizId, Description, QuestionOrder) VALUES (2, 1, 'Whose iconic speech repeated the phrase "I have a dream"', 2);
 INSERT INTO Question (QuestionId, QuizId, Description, QuestionOrder) VALUES (3, 1, 'Nelson Mandela was the president of which country?', 3);
 
-
+--Choice
 INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (1, 1, 'The first black woman to win an olympic gold medal', 1, FALSE);
 INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (2, 1, 'The first black woman to travel into space', 2, TRUE);
 INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (3, 1, 'The first black woman to become an MP', 3, FALSE);
@@ -20,8 +21,57 @@ INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) V
 INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (8, 3, 'Egypt', 2, FALSE);
 INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (9, 3, 'Australia', 3, FALSE);
 
+-- Student
 INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Emily','Marr','Year 12', 'emily@gmail.com' );
 INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Joe','Donald','Year 12', 'joed@gmail.com');
 INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Abdel','Patel','Year 13', 'abdelp@gmail.com');
 INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Bob','Jones','Year 13', 'bobj@gmail.com');
 INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Kate','Robinson','Year 13', 'kr13@gmail.com');
+
+-- Attempt
+INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (1, 1, 1, '2021-10-09', '12:45:01');
+INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (2, 1, 1, '2021-10-09', '13:45:11');
+INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (3, 2, 1, '2021-09-02', '10:20:02');
+INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (4, 2, 1, '2021-25-08', '15:32:00');
+INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (5, 3, 1, '2021-10-17', '06:05:00');
+INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (6, 4, 1, '2021-10-25', '13:25:01');
+INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (7, 5, 1, '2021-10-12', '17:20:12');
+INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (8, 5, 1, '2021-10-12', '18:37:00');
+INSERT INTO Attempt (StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (9, 5, 1, '2021-10-13', '09:03:00');
+
+-- AttemptAnswer
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (1, 1);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (1, 4);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (1, 9);
+
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (2, 2);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (2, 4;
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (2, 8;
+
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (3, 2);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (3, 5);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (3, 7);
+
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (4, 2);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (4, 4);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (4, 7);
+
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (5, 2);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (5, 6);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (5, 8);
+
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (6, 1);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (6, 4);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (6, 8);
+
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (7, 2);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (7, 4);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (7, 8);
+
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (8, 3);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (8, 6);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (8, 9);
+
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (9, 1);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (9, 5);
+INSERT INTO AttemptAnswer (AttemptId, ChoiceId) VALUES (9, 7);
