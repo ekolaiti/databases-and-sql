@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS Quiz (
 	QuizId INTEGER,
 	Name VARCHAR(100),
 	PublishedDate DATE,
-	PRIMARY KEY(QuizId AUTOINCREMENT)
+	PRIMARY KEY(QuizId)
 );
 
 CREATE TABLE IF NOT EXISTS Question (
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS Question (
 	QuizId INTEGER,
 	Description VARCHAR(100),
 	QuestionOrder INTEGER,
-	PRIMARY KEY(QuestionId AUTOINCREMENT),
+	PRIMARY KEY(QuestionId),
 	FOREIGN KEY(QuizId) REFERENCES Quiz(QuizId)
 );
 
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS Choice (
 	Description VARCHAR(100),
 	ChoiceOrder INTEGER,
 	IsCorrect BOOLEAN,
-	PRIMARY KEY(ChoiceId AUTOINCREMENT),
+	PRIMARY KEY(ChoiceId),
 	FOREIGN KEY(QuestionId) REFERENCES Question(QuestionId)
 );
 
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS Student(
 	LastName VARCHAR(100),
 	YearGroup VARCHAR(100),
 	Email VARCHAR(50),
-	PRIMARY KEY(StudentId AUTOINCREMENT)
+	PRIMARY KEY(StudentId)
 );
 
 CREATE TABLE IF NOT EXISTS Attempt(
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS Attempt(
 	QuizId INTEGER,
 	SubmittedDate DATE,
 	SubmittedTime TIME,
-	PRIMARY KEY(AttemptId AUTOINCREMENT),
+	PRIMARY KEY(AttemptId),
 	FOREIGN KEY(StudentId) REFERENCES Student(StudentId),
 	FOREIGN KEY(QuizId) REFERENCES Quiz(QuizId)
 );
