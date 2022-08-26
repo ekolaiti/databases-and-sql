@@ -22,11 +22,11 @@ INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) V
 INSERT INTO Choice (ChoiceId, QuestionId, Description, ChoiceOrder, IsCorrect) VALUES (9, 3, 'Australia', 3, FALSE);
 
 -- Student
-INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Emily','Marr','Year 12', 'emily@gmail.com' );
-INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Joe','Donald','Year 12', 'joed@gmail.com');
-INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Abdel','Patel','Year 13', 'abdelp@gmail.com');
-INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Bob','Jones','Year 13', 'bobj@gmail.com');
-INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Kate','Robinson','Year 13', 'kr13@gmail.com');
+INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Emily','Marr','Year 12', 'emarr@example.edu' );
+INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Joe','Donald','Year 12', 'jdonald@example.edu');
+INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Abdel','Patel','Year 13', 'apatel@example.edu');
+INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Bob','Jones','Year 13', 'bjones@example.edu');
+INSERT INTO Student (FirstName, LastName, YearGroup, Email) VALUES ('Kate','Robinson','Year 13', 'krobinson@example.edu');
 
 -- Attempt
 INSERT INTO Attempt (AttemptId, StudentId, QuizId, SubmittedDate, SubmittedTime) VALUES (1, 1, 1, '2021-10-09', '12:45:01');
