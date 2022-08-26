@@ -1,0 +1,2 @@
+DELETE FROM Choice
+WHERE ChoiceId = 13;
