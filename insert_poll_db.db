@@ -3,12 +3,17 @@ INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Joe','Donald','Yea
 INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Abdel','Patel','Year 13');
 INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Bob','Jones','Year 13');
 
+INSERT INTO Account (Username, Password, CreatedDate, LastLoginDate) VALUES ('emarr','********','2021-09-03', '2022-08-31');
+INSERT INTO Account (Username, Password, CreatedDate, LastLoginDate) VALUES ('jdonald','********','2021-09-03', '2022-09-05');
+INSERT INTO Account (Username, Password, CreatedDate, LastLoginDate) VALUES ('apatel','********','2020-09-04', '2022-09-05');
+INSERT INTO Account (Username, Password, CreatedDate, LastLoginDate) VALUES ('bjones','********','2020-09-04', '2022-09-09');
+
 INSERT INTO Poll (QuestionText, IsActive, PublishedDate) VALUES ('Which is a higher risk of climate change?', TRUE, '2021-10-01');
 
 INSERT INTO Option (PollId, OptionText)  VALUES (1, 'extreme temperatures');
 INSERT INTO Option (PollId, OptionText)  VALUES (1, 'sea level rise');
 
-INSERT INTO Vote (StudentId, OptionId, SubmittedDate, SubmittedTime) VALUES (1,1,'2021-10-1','12:00:00');
-INSERT INTO Vote (StudentId, OptionId, SubmittedDate, SubmittedTime) VALUES (2,2,'2021-10-5','17:06:01');
-INSERT INTO Vote (StudentId, OptionId, SubmittedDate, SubmittedTime) VALUES (3,1,'2021-10-1','21:56:05');
-INSERT INTO Vote (StudentId, OptionId, SubmittedDate, SubmittedTime) VALUES (4,1,'2021-10-8','21:00:40');
+INSERT INTO Vote (StudentId, OptionId, SubmittedDate, SubmittedTime) VALUES (1,1,'2021-10-01','12:00:00');
+INSERT INTO Vote (StudentId, OptionId, SubmittedDate, SubmittedTime) VALUES (2,2,'2021-10-05','17:06:01');
+INSERT INTO Vote (StudentId, OptionId, SubmittedDate, SubmittedTime) VALUES (3,1,'2021-10-01','21:56:05');
+INSERT INTO Vote (StudentId, OptionId, SubmittedDate, SubmittedTime) VALUES (4,1,'2021-10-08','21:00:40');
