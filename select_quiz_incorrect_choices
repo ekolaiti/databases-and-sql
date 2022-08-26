@@ -1,0 +1,11 @@
+-- Produce a list of student that answered Question3 incorectly.
+-- The list must include the names and the selected incorrect choice(s) for the quiz attempt(s).
+
+SELECT Student.firstname, Choice.Description
+FROM Student, Question, Choice, Attempt, AttemptAnswer
+WHERE Student.StudentId = Attempt.StudentId
+AND Attempt.AttemptId = AttemptAnswer.AttemptId
+AND AttemptAnswer.ChoiceId = Choice.ChoiceId
+ANd Choice.QuestionId = Question.QuestionId
+AND Question.Description = 'Ignatius Sancho was the first black British man to...?'
+AND Choice.IsCorrect = 'False';
