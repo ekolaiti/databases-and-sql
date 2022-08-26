@@ -1,0 +1,11 @@
+-- Produce a list with all the questions and choices for the Black History Month quiz. 
+-- These should be ordered by question number and then choice number. 
+-- This means that the questions should be listed from the first one to the last one, 
+-- and the choices for each question should be ordered starting from Choice 1, then Choice 2, and so on. 
+
+SELECT Question.Description, Choice.Description 
+FROM Question, Choice, Quiz
+WHERE Quiz.QuizId = Question.QuizId
+AND Question.QuestionId = Choice.QuestionId
+AND Quiz.Name = 'Black History Month'
+ORDER BY Question.QuestionOrder, Choice.ChoiceOrder
