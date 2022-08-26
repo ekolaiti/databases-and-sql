@@ -1,0 +1,8 @@
+-- Produce a list of the emails of all the students that attempted the Black History Month quiz 
+-- and the date that they submitted each attempt. 
+
+SELECT Student.Email, Attempt.SubmittedDate
+FROM Student, Attempt, Quiz
+WHERE Student.StudentId = Attempt.StudentId
+AND Quiz.QuizId = Attempt.QuizId
+AND Quiz.Name = 'Black History Month'
