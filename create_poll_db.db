@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS Poll(
 PollId INTEGER PRIMARY KEY AUTOINCREMENT, 
 QuestionText VARCHAR(100), 
 IsActive VARCHAR(100), 
-PublishedDate VARCHAR(100));
+PublishedDate DATE);
 
 CREATE TABLE IF NOT EXISTS Student(
 StudentId INTEGER PRIMARY KEY AUTOINCREMENT, 
@@ -15,8 +15,8 @@ AccountId INTEGER PRIMARY KEY AUTOINCREMENT,
 StudentId INTEGER, 
 Usernam VARCHAR(100), 
 Password VARCHAR(100),
-CreatedDate Date,
-LastLoginDate Date,
+CreatedDate DATE,
+LastLoginDate DATE,
 FOREIGN KEY(StudentId) REFERENCES Student(StudentId));
 
 CREATE TABLE IF NOT EXISTS Option(
