@@ -1,0 +1,3 @@
+UPDATE Choice
+SET IsCorrect = TRUE
+WHERE Description = 'Martin Luther King';
