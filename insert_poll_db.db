@@ -4,12 +4,6 @@ INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Joe','Donald','Yea
 INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Abdel','Patel','Year 13');
 INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Bob','Jones','Year 13');
 
--- Account
-INSERT INTO Account (Username, Password, CreatedDate, LastLoginDate) VALUES ('emarr','********','2021-09-03', '2022-08-31');
-INSERT INTO Account (Username, Password, CreatedDate, LastLoginDate) VALUES ('jdonald','********','2021-09-03', '2022-09-05');
-INSERT INTO Account (Username, Password, CreatedDate, LastLoginDate) VALUES ('apatel','********','2020-09-04', '2022-09-05');
-INSERT INTO Account (Username, Password, CreatedDate, LastLoginDate) VALUES ('bjones','********','2020-09-04', '2022-09-09');
-
 -- Poll
 INSERT INTO Poll (QuestionText, IsActive, PublishedDate) VALUES ('Which is a higher risk of climate change?', TRUE, '2021-10-01');
 
