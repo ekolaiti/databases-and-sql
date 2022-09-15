@@ -6,7 +6,7 @@ INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Bob','Jones','Year
 
 -- Poll
 INSERT INTO Poll (QuestionText, IsActive, PublishedDate) VALUES ('Which is a higher risk of climate change?', TRUE, '2021-10-01');
-INSERT INTO Poll (QuestionText, IsActive, PublishedDate) VALUES ('Are you concerned that climate change can affect you personally?', TRUE, '2021-12-01');
+INSERT INTO Poll (QuestionText, IsActive, PublishedDate) VALUES ('Are you concerned that climate change can affect you personally?', TRUE, '2021-10-08');
 
 -- Option
 INSERT INTO Option (PollId, OptionText)  VALUES (1, 'extreme temperatures');
