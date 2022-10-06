@@ -1,8 +1,8 @@
 -- Student
-INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Emily','Marr','Year 12');
-INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Joe','Donald','Year 12');
-INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Abdel','Patel','Year 13');
-INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Bob','Jones','Year 13');
+INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Nikole','Reyes','Year 12');
+INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Isaac','Finn','Year 12');
+INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Hadija,'Aly','Year 13');
+INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Justice','Kaydence','Year 13');
 
 -- Poll
 INSERT INTO Poll (QuestionText, IsActive, PublishedDate) VALUES ('Which is a higher risk of climate change?', TRUE, '2021-10-01');
