@@ -1,7 +1,7 @@
 -- Student
-INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Nikole','Reyes','Year 12');
+INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Niki','Reyes','Year 12');
 INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Isaac','Finn','Year 12');
-INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Hadija,'Aly','Year 13');
+INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Hadija','Aly','Year 13');
 INSERT INTO Student (FirstName, LastName, YearGroup) VALUES ('Justice','Kaydence','Year 13');
 
 -- Poll
